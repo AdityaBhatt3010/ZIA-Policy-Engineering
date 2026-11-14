@@ -232,41 +232,7 @@ It does not provide a mechanism for URL Filtering to override an explicit Cloud 
 
 ---
 
-## 10. Troubleshooting Unexpected Outcomes
-
-When the result does not match expectations, several questions become relevant.
-
-### Application Identification
-- Was the traffic recognised as the expected cloud application?
-- Was the application rule actually matched?
-- Was the transaction associated with the expected activity?
-
-### Cloud App Control
-- Which rule matched?
-- Was the action an explicit allow or block?
-- Was another rule evaluated first?
-
-### URL Filtering
-- Was the destination evaluated?
-- Which URL category was assigned?
-- Did a custom URL category match?
-- Was the destination covered by an existing rule?
-
-### Cascading
-- Is global cascading enabled?
-- Is rule-level cascading available?
-- Is the matching rule subject to an exception?
-- Was the transaction actually allowed by Cloud App Control?
-
-### Additional Considerations
-- Was SSL/TLS inspection applicable?
-- Did DNS or Firewall Control influence the connection?
-- Was traffic forwarded through the expected ZIA path?
-- Do the logs identify the expected matched policy?
-
----
-
-## 11. Key Takeaways
+## 10. Key Takeaways
 
 1. Cloud App Control is evaluated before URL Filtering in the documented interaction.
 2. An explicit Cloud App Control block remains blocked.
